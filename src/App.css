@@ -119,6 +119,7 @@ text-align: center;
 
 .test-section .cards p{
   margin:20px 15px;
+  font-size: 14px;
 }
 .test-section .card-item{
   display: flex;
