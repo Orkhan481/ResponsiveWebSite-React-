@@ -95,3 +95,33 @@ border-radius: 20px;
 text-align: center;
 }
 /* For Test */
+.test-section{
+  background-color: var(--primary-red);
+  padding: 20px 15px;
+  color:var(--primary-white);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.test-section .titles {
+  width: 100%;
+  text-align: center;
+  margin:20px 0;
+}
+
+.test-section .cards{
+  width:80%;
+  margin:20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.test-section .cards p{
+  margin:20px 15px;
+}
+.test-section .card-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
