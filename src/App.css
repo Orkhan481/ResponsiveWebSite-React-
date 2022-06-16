@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/* Colors */
+:root {
+  --primary-black: #000;
+  --primary-red:#F84646;
+  --primary-white:#fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* For NAVBAR */
+.navbar-toggler {
+  color: var(--primary-black) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+  padding: 15px 25px;
+}
+
+.navbar-nav .nav-item a {
+  color: var(--primary-black);
+  font-size: 1.2rem;
+  margin: .2rem;
+  font-weight: 500;
+}
+
+/* For HEADER */
+.navbar-and-header {
+  width: 100%;
+  height: 100vh;
+  background: url(../public/BG-image.png);
+  background-size: cover;
+  object-fit: contain;
+}
+
+.header {
+  position: relative;
+}
+
+.header .titles {
+  width: 100%;
+  position: absolute;
+  top: 250px;
+  left: 150px
+}
+@media(max-width:768px){
+  .header .titles {
+    width: 100%;
+    position: absolute;
+    top: 300px;
+    left: 25px
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header .titles h1{
+  font-size: 55px;
+  font-weight: 700;
+  color:var(--primary-black)
+}
+
+.header .titles .typed{
+  font-size: 24px;
+  font-weight: 500;
+  color:var(--primary-black)
+}
+/* For Process Management */
+.process-management{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+.process-management .titles{
+  width:60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:0 auto;
+  padding:20px 0;
+  text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.process-management .titles h1{
+  color:var(--primary-red)
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pm-info{
+  width:90%;
+  padding:10px 30px;
 }
+.process-management .pm-info h3{
+  font-size: 24px;
+  margin:15px 0;
+}
+.pm-info .card{
+  padding:20px 25px;
+margin:10px  0 !important;
+border:none !important;
+border-radius: 20px;
+text-align: center;
+}
+/* For Test */
